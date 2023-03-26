@@ -1,0 +1,114 @@
+body{
+    background-color: #eae1d3;
+}
+
+:root {
+    --soft: #eae1d3;
+    --color: #c92d1f;
+    --green: #80a89b;
+    --serif:var(--serif);
+}
+.home-page-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-left:50px;
+}
+.header-1 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+span{
+    height: 2px;
+    width: 24px;
+    background-color: #000;
+    display: inline-block;
+}
+span::before{
+    content: "";
+    height: 2px;
+    width: 24px;
+    background-color: #000;
+    display: inline-block;
+    transform: translateY(1px);
+
+}
+
+span::after{
+    content: "";
+    height: 2px;
+    width: 24px;
+    background-color: #000;
+    display: inline-block;
+    transform: translateY(-1px);
+
+}
+.home-page-hold{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+h1{
+    color: var(--color);
+    font-size: 40px;
+    padding-right: 40px;
+}
+.t-tittle{
+    padding-left: 30px;
+}
+
+.home-page-svg{
+    padding:25px;
+}
+
+.btn{
+    height: 50px;
+    width: 130px;
+    text-decoration: none;
+    color: var(--color);
+    background-color: var(--soft);
+    border: 2px solid var(--color);
+    border-radius: 38px;
+    position: relative;
+    font-weight: bolder;
+    font-size: 16px;
+    overflow: hidden;
+}
+.btn:hover .btn-lg{
+    transform: translateY(0px);
+}
+.btn-lg{
+    position: absolute;
+    transform: translateY(140px);
+    top: -1px;
+    left: -2px;
+    height: 50px;
+    width: 130px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--color);
+    border-radius: 38px;
+    transition: all 0.3s ease-out;
+}
+button{
+    text-decoration: none;
+    outline: none;
+    text-transform: uppercase;
+}
+.btn:focus{
+    outline: none;
+}
+
+.post-home-see-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
