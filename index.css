@@ -183,6 +183,7 @@ h5{
     position: relative;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    
 }
 
 
@@ -231,6 +232,7 @@ h5{
     border-left: 0px;
     border-right: 0px;   
     transition: color 0.7s ease-out;
+    
 }
 .post-home-post:hover{
     color: var(--soft);
@@ -387,5 +389,18 @@ h5{
     background-color: var(--soft);
 } */
 
+
+@media (max-width:1024px){
+    .page-writing h1{
+        font-size: 70px;
+    }
+
+    .page-brand-name t-hold{
+        justify-content: end;
+    }
+    .post-home-post{
+        height: 150px;
+    }
+}
 
 
