@@ -321,7 +321,6 @@ h5{
 /* ***************       footer      ***************************/
 .footer{
     color: var(--color);
-    font-family: var(--sans);
     position: sticky;
     bottom: 0;
     z-index: -1;
@@ -337,6 +336,7 @@ h5{
     flex-direction: row;
     margin-top:10px ;
     padding-bottom:15px ;
+    font-family: var(--sans);
 }
 
 .linked{
@@ -359,6 +359,10 @@ h5{
 
 .footer_content{
     padding-top: 30px;
+}
+.t_bold{
+    font-family: var(--sans);
+    letter-spacing: 2px;
 }
 
 .footer-col1{
