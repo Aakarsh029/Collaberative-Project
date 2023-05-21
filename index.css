@@ -95,6 +95,11 @@ h1{
 .btn:hover .btn-lg{
     transform: translateY(0px);
 }
+.main-home{
+    position: relative;
+    z-index: 1000;
+    background-color: var(--soft);
+}
 .btn-lg{
     position: absolute;
     transform: translateY(140px);
