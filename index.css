@@ -33,6 +33,7 @@ body{
     align-items: center;
     padding-top: 25px;
     padding-right: 70px;
+    width: 96vw;
     padding-left:70px;
     padding-bottom: 40px;
     
@@ -42,6 +43,7 @@ body{
     position: fixed;
     margin-left: -80px;
     width: 100%;
+    z-index: 10000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +57,7 @@ body{
     height: 40px;
     border-radius: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 10000;
     
 }
 .home-page-hold{
@@ -76,6 +78,8 @@ h1{
 
 .home-page-svg{
     padding:25px;
+    width: 96vw;
+    max-width: 96vw;
 }
 
 .btn{
@@ -334,9 +338,9 @@ h5{
 }
 
 .footer-hold{
-    margin-left: 80px;
+    /* margin-left: 80px;
     margin-top: 70px;
-    margin-bottom: 80px;
+    margin-bottom: 80px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -345,6 +349,7 @@ h5{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 96vw;
 }
 .footer_content{
     padding-top: 30px;
@@ -396,10 +401,10 @@ h5{
 }
 
 /* **********media Query********************* */
-@media (max-width:820px){
+@media (max-width:821px){
 
     .home-page-nav{
-        max-width:570px;
+        max-width:96vw;
         height: 30px;
         position: sticky;
         padding-left: 30px;
@@ -431,7 +436,8 @@ h5{
         margin-left: -20px;
     }
     .home-page-svg{
-        max-width: 530px;
+        max-width: 96vw;
+        width: 96vw;
         margin-right: -200px;
     }
     .tittle-desc{
@@ -493,7 +499,7 @@ h5{
     /* ***********footer************ */
     .footer{
         position: relative;
-        width: 550px;
+        width: 96vw;
     }
     .footer_subj{
         letter-spacing: 1px;
@@ -541,13 +547,13 @@ h5{
     .footer-col3{
         border-width: 1px;
         height: 200px;
-        width: 450px;
+        width: 95vw;
         padding-right:200px;
     }
     
     .footer_contact_subj{
         letter-spacing: 1px;
-        width:450px;
+        width:95vw;
         border-width: 1px;
         flex-direction: row;
         margin-top:10px ;
