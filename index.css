@@ -409,6 +409,7 @@ h5{
     border-width: 2px;
     height: 250px;
     width: 500px;
+    padding-right: 200px;
 }
 
 .footer_contact_subj{
@@ -428,18 +429,20 @@ h5{
 /* **********media Query********************* */
 @media (min-width:821px){
     .footer{
-        margin: 0 20px;
+        margin: 0 20px 20px 20px ;
     }
     .footer-hold{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100vw;
+        gap: 20px;
     }
     .media_query{
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 20px;
     }
     .footer-col3{
         border: solid;
@@ -448,6 +451,7 @@ h5{
         border-width: 2px;
         height: 250px;
         width: 300px;
+        padding-right: 200px;
     }
     .footer_contact_subj{
         width:300px;
