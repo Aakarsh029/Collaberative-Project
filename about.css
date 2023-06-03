@@ -300,3 +300,54 @@ span::after{
     padding-bottom:15px ;
     font-family: var(--sans);
 }
+.sliding_window{
+    width: 100vw;
+    overflow: hidden;
+}
+.window1,.slides,.window2{
+    display: flex;
+}
+.window1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+    width: 320vw;
+    color: var(--color);
+    font-size: 100px;
+    background-color: var(--soft);
+    animation: marquee-animation 30s linear infinite;
+    transition: all 0.3s ease;
+}
+.window2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+    width: 320vw;
+    color: var(--color);
+    font-size: 100px;
+    background-color: var(--soft);
+    animation: marquee-animation-2 30s linear infinite;
+    transition: all 0.3s ease;
+}
+@keyframes marquee-animation {
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-100%,0);
+    }
+}
+@keyframes marquee-animation-2 {
+    0%{
+        transform: translate(-100%,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+.window1:hover,.window2:hover{
+    /* animation-duration: 70s; */
+    color:#fff;
+    font-size: 100px;
+    background-color: var(--color);
+}
