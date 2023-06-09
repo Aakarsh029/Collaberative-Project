@@ -22,15 +22,20 @@ body{
     max-width: 100vw;
     overflow-x: hidden;
 }
+.header-home{
+    width: inherit;
+    overflow-x: hidden;
+}
 .home-page-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 25px;
     padding-right: 70px;
+    width: 100vw;
+    overflow-x: hidden;
     padding-left:70px;
     padding-bottom: 40px;
-    background-color: var(--soft);
     
 }
 .header-2{
@@ -38,6 +43,7 @@ body{
     position: fixed;
     margin-left: -80px;
     width: 100%;
+    z-index: 10000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +57,7 @@ body{
     height: 40px;
     border-radius: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 10000;
     
 }
 span{
@@ -84,7 +90,7 @@ span::after{
     padding-top: 70px;
     border-bottom: 20px;
     border-color: var(--color);
-    border-width: 100vw;
+    /* border-width: 100vw; */
     background-color: var(--soft);
     
 }
@@ -182,9 +188,7 @@ span::after{
     color: var(--color);
     padding-top: 40px;
     padding-right: 50px;
-    /* gap: 20px;
-    line-height: 150%;
-    word-spacing: 4px; */
+
 }
 .mid-about-pic{
     padding-bottom: 50px;
@@ -194,11 +198,15 @@ span::after{
     max-width: 200%;
     height: auto; 
 }
+.picture_1{
+    max-width: 100vw;
+}
 .selected_client{
     height: 60px;
+    width: 100vw;
     border: 2.5px solid var(--color);
-    border-left: none;
-    border-right: none;
+    border-left-color: var(--soft);
+    border-right-color: var(--soft);
     display: flex;
     align-items: center;
 }
@@ -208,14 +216,20 @@ span::after{
     padding-left: 70px; 
     font-family: var(--sans);
     letter-spacing: 1px;
-
 }
+/* !!!!!!!!!!!!!!!!!!!!!! Slides-Animation !!!!!!!!!!!!!!!!!!! */
+
+
+
 /* ******************footer**************************************** */
 .footer{
     color: var(--color);
     position: sticky;
     bottom: 0;
+    width: 100vw;
+    overflow-x: hidden;
     z-index: -1;
+
 }
 .footer_subj{
     letter-spacing: 2px;
@@ -240,18 +254,12 @@ span::after{
 }
 
 .footer-hold{
-    margin-left: 80px;
-    margin-top: 70px;
-    margin-bottom: 80px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.media_query{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .footer_content{
     padding-top: 30px;
 }
@@ -275,7 +283,6 @@ span::after{
     border-width: 2px;
     height: 250px;
     width: 300px;
-    margin-left: 100px;
 }
 .footer-col3{
     border: solid;
@@ -284,7 +291,7 @@ span::after{
     border-width: 2px;
     height: 250px;
     width: 500px;
-    padding-right:200px;
+    padding-right: 200px;
 }
 
 .footer_contact_subj{
@@ -300,61 +307,34 @@ span::after{
     padding-bottom:15px ;
     font-family: var(--sans);
 }
-.sliding_window{
-    width: 100vw;
-    overflow: hidden;
-}
-.window1,.slides,.window2{
-    display: flex;
-}
-.window1{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    gap: 30px;
-    width: 320vw;
-    color: var(--color);
-    font-size: 100px;
-    background-color: var(--soft);
-    animation: marquee-animation 30s linear infinite;
-    transition: all 0.3s ease;
-}
-.window2{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    gap: 30px;
-    width: 320vw;
-    color: var(--color);
-    font-size: 100px;
-    background-color: var(--soft);
-    animation: marquee-animation-2 30s linear infinite;
-    transition: all 0.3s ease;
-}
-@keyframes marquee-animation {
-    0%{
-        transform: translate(0,0);
+
+@media (min-width:821px){
+    .footer{
+        margin: 0 20px 20px 20px ;
     }
-    100%{
-        transform: translate(-100%,0);
+    .footer-hold{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        gap: 20px;
     }
-}
-@keyframes marquee-animation-2 {
-    0%{
-        transform: translate(0%,0);
+    .media_query{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
-    100%{
-        transform: translate(100%,0);
+    .footer-col3{
+        border: solid;
+        border-left-color: var(--soft);
+        border-right-color: var(--soft);
+        border-width: 2px;
+        height: 250px;
+        width: 300px;
+        padding-right: 200px;
     }
-}
-.window1:hover,.window2:hover{
-    /* animation-duration: 70s; */
-    color:#fff;
-    font-size: 100px;
-    background-color: var(--color);
-}
-.slide_contant{
-    display: flex;
-}
-.slide_count{
-    font-size: 20px;
-    margin-top: 70px;
+    .footer_contact_subj{
+        width:300px;
+    }
 }

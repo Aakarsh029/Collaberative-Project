@@ -289,6 +289,7 @@ h5{
     overflow-x: hidden;
     margin-top: 60px;
     color: var(--color);
+    border-bottom: var(--color) solid 1.5px;
 }
 .pillar-items,.item{
     display: flex;
@@ -319,6 +320,7 @@ h5{
     margin: 10px 0px;
     font-weight: lighter;
 }
+
 /*  ************* class-->pillers************ */
 /* .item{
     display: flex;
@@ -342,9 +344,9 @@ h5{
     position: sticky;
     bottom: 0;
     width: 100vw;
-    /* margin: 0 20px; */
     overflow-x: hidden;
     z-index: -1;
+
 }
 .footer_subj{
     letter-spacing: 2px;
@@ -369,9 +371,7 @@ h5{
 }
 
 .footer-hold{
-    /* margin-left: 80px;
-    margin-top: 70px;
-    margin-bottom: 80px; */
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -400,7 +400,6 @@ h5{
     border-width: 2px;
     height: 250px;
     width: 300px;
-    /* margin-left: 100px; */
 }
 .footer-col3{
     border: solid;
@@ -477,9 +476,6 @@ h5{
     span{
         height: 1.5px;
         width: 20px;
-    }
-    .footer-col2{
-        margin-left: 40px;
     }
     span::before{
         content: "";
@@ -609,6 +605,7 @@ h5{
         height: 150px;
         width: 250px;
         border-width: 1px;
+        margin-left: 40px;
     }
     .linked{
         text-decoration: none;
