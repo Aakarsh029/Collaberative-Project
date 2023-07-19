@@ -7,6 +7,7 @@
     <title>About Us</title>
     <link rel="stylesheet" href="./about.css">
     <link rel="stylesheet" href="./new.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="header-about">
@@ -132,7 +133,7 @@
         <div class="line"></div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-offset="300">
         <div class="footer-hold">
             <div class="media_query">
                 <div class="footer-col1">
@@ -177,5 +178,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

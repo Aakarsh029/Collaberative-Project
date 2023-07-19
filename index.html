@@ -8,6 +8,7 @@
     <title>AndhariRaat</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./new.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -104,7 +105,7 @@
                 </div>
             </div>
             <div class="post-home-ctn">
-                <div class="post-home-post">
+                <div class="post-home-post" data-aos="fade-right">
                     <div class="post-under-img-container">
                         <img id="image" src="./images/cb_cg_home_ultrawide_red_thumb.jpg" alt="">
                         <div class="post-content-container">
@@ -121,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="post-home-post">
+                <div class="post-home-post" data-aos="fade-right">
                     <div class="post-under-img-container">
                         <img id="image" src="./images/cb_bmh_home_ultrawide_red_thumb-2.jpg" alt="">
                         <div class="post-content-container">
@@ -138,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="post-home-post">
+                <div class="post-home-post" data-aos="fade-right">
                     <div class="post-under-img-container">
                         <img id="image" src="/images/cb_ls_home_ultrawide_red_thumb-3.jpg" alt="">
                         <div class="post-content-container">
@@ -153,7 +154,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="post-home-post">
+                <div class="post-home-post" data-aos="fade-right">
                     <div class="post-under-img-container">
                         <img id="image" src="/images/cb_cws_home_ultrawide_red_thumb-4.jpg" alt="">
                         <div class="post-content-container">
@@ -170,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="post-home-post">
+                <div class="post-home-post" data-aos="fade-right">
                     <div class="post-under-img-container">
                         <img id="image" src="/images/cb_leab_home_ultrawide_red_thumb-5.jpg" alt="">
                         <div class="post-content-container">
@@ -189,9 +190,9 @@
                 </div>
             </div>
         </div>
-        <div class="pillars">
+        <div class="pillars" >
             <div class="pillar-hold">
-                <div class="pillar-items">
+                <div class="pillar-items" data-aos="zoom-in">
                     <div class="item">
                         <div class="alpha">
                             <h2>A.</h2>
@@ -213,7 +214,7 @@
                         <h1>Spaces</h1>
                     </div>
                 </div>
-                <div class="pillar-text">
+                <div class="pillar-text" data-aos="zoom-out">
                     <div class="pillar-text-offer">Our Pillars
                     </div>
                     <div class="hr-hor-line"></div>
@@ -241,7 +242,7 @@
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-offset="300">
         <div class="footer-hold">
             <div class="media_query">
                 <div class="footer-col1">
@@ -286,6 +287,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
