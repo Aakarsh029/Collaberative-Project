@@ -198,6 +198,10 @@ h5{
     border-right: 0px;
     height: 50px;
 }
+.post-home-ctn a{
+    text-decoration: none;
+    color: var(--color);
+}
 .post-home{
     color:var(--color);
     border-width: 50px;
